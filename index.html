@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="">
+<html lang="en" ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -15,11 +15,13 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="app.css"/>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
-    <script src="routes.js"></script>
-    <script src="app.js"></script>
-    <script src="appJQ.js"></script>
+    <script src="scripts/routes.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/config/config.js"></script>
+    <script src="scripts/appJQ.js"></script>
 </head>
-<body ng-controller="">
+<body ng-controller="myCtrl">
 Welcome to Angular Bootstrap Font-Awesome Boilerplate.
+<div class="ng-view"></div>
 </body>
 </html>
